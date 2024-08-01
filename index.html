@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fncss.config.css">
+    <link rel="stylesheet" href="./css/fncss.theme.css">
+    <link rel="stylesheet" href="./css/fncss.typography.css">
+    <title>FNCSS Test</title>
+</head>
+<body>
+
+<h1 class="font(sans) font-size(4xl) font-weight(bold) text-align(center)">
+    FNCSSテスト
+</h1>
+
+<section>
+    <h2 class="font(serif) font-size(2xl) font-weight(medium) text-align(left)">
+        1. 背景色と文字色の組み合わせ
+    </h2>
+
+    <div class="bg(primary)">
+        <p class="color(primary,light1)">主要な色の背景に、明るいオーバーレイを重ねた文字色</p>
+    </div>
+
+    <div class="bg(primary,dark1)">
+        <p class="color(primary,light2)">暗いオーバーレイ背景に、やや透過性の高い明るい文字色</p>
+    </div>
+
+    <div class="bg(primary,light1)">
+        <p class="color(primary,dark1)">明るいオーバーレイ背景に、暗いオーバーレイ文字色</p>
+    </div>
+
+    <div class="bg(primary,light2)">
+        <p class="color(primary)">やや透過性の高い明るい背景に、主要な色の文字色</p>
+    </div>
+</section>
+
+<section>
+    <h2 class="font(serif) font-size(2xl) font-weight(medium) text-align(left)">
+        2. フォントファミリーとサイズ
+    </h2>
+
+    <p class="font(sans) font-size(base) line-height(normal) letter-spacing(normal)">
+        これは標準的なサンセリフフォントの段落です。行の高さと文字間隔は通常です。
+    </p>
+
+    <p class="font(serif) font-size(lg) line-height(relaxed) letter-spacing(wide)">
+        これはセリフフォントの大きめの段落です。行の高さはリラックスし、文字間隔は広めです。
+    </p>
+
+    <p class="font(mono) font-size(sm) line-height(tight) letter-spacing(tight)">
+        これは等幅フォントの小さめの段落です。行の高さと文字間隔は狭めです。
+    </p>
+</section>
+
+<section>
+    <h2 class="font(serif) font-size(2xl) font-weight(medium) text-align(left)">
+        3. テキスト変換と配置
+    </h2>
+
+    <h3 class="font-size(xl) font-weight(bold) text-transform(uppercase) text-align(right)">
+        大文字変換と右揃え
+    </h3>
+
+    <p class="text-align(justify) text-decoration(underline)">
+        これは両端揃えされ、下線付きのテキストです。長い文章の場合、このように配置されます。
+    </p>
+
+    <p class="font-weight(light) text-transform(capitalize)">
+        これは細字で、単語の先頭が大文字になっています。
+    </p>
+
+    <p class="font-weight(bold) text-decoration(line-through)">
+        これは太字で、取り消し線が引かれています。
+    </p>
+</section>
+
+</body>
+</html>
