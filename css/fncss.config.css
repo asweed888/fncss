@@ -1,9 +1,9 @@
 :root {
   /* 既存の色設定 */
   --primary-color: hsl(151, 37%, 54%);
-  --dark-overlay1: hsla(0, 0%, 0%, 0.2);
-  --light-overlay1: hsla(0, 0%, 100%, 0.9);
-  --light-overlay2: hsla(0, 0%, 100%, 0.8);
+  --dark-ratio1: 20%;
+  --light-ratio1: 80%;
+  --light-ratio2: 90%;
 
   /* フォントファミリー */
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;

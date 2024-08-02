@@ -1,19 +1,20 @@
 /* 背景色クラス（前回のまま） */
 .bg\(primary\) {
-  background: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .bg\(primary\,dark1\) {
-  background: linear-gradient(var(--dark-overlay1), var(--dark-overlay1)), var(--primary-color);
+  background-color: color-mix(in srgb, black var(--dark-ratio1), var(--primary-color));
 }
 
 .bg\(primary\,light1\) {
-  background: linear-gradient(var(--light-overlay1), var(--light-overlay1)), var(--primary-color);
+  background-color: color-mix(in srgb, white var(--light-ratio1), var(--primary-color));
 }
 
 .bg\(primary\,light2\) {
-  background: linear-gradient(var(--light-overlay2), var(--light-overlay2)), var(--primary-color);
+  background-color: color-mix(in srgb, white var(--light-ratio2), var(--primary-color));
 }
+
 
 /* 文字色クラス（新規追加） */
 .color\(primary\) {
@@ -21,22 +22,14 @@
 }
 
 .color\(primary\,dark1\) {
-  background: linear-gradient(var(--dark-overlay1), var(--dark-overlay1)), var(--primary-color);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: color-mix(in srgb, black var(--dark-ratio1), var(--primary-color));
 }
 
 .color\(primary\,light1\) {
-  background: linear-gradient(var(--light-overlay1), var(--light-overlay1)), var(--primary-color);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: color-mix(in srgb, white var(--light-ratio1), var(--primary-color));
 }
 
 .color\(primary\,light2\) {
-  background: linear-gradient(var(--light-overlay2), var(--light-overlay2)), var(--primary-color);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: color-mix(in srgb, white var(--light-ratio2), var(--primary-color));
 }
+
