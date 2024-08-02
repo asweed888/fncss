@@ -1,90 +1,225 @@
-.grid\(\) {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 10px;
+/* グリッドの基本設定 */
+.grid, [class*="grid(sm:"] {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
 }
 
-[class*="col("] {
+/* モバイルファーストの基本列設定 */
+[class*="col(sm:"] {
+  grid-column: span 12;
+  padding: 10px;
+}
+
+/* スマートフォン用のグリッド設定 */
+@container style(--mobile) {
+  /* 50%幅の列 */
+  [class*="col(sm:50,"] {
+    grid-column: span 6;
+  }
+
+  /* 25%幅の列 */
+  [class*="col(sm:25,"], [class*="grid(sm:25,"] > * {
+    grid-column: span 3;
+  }
+
+  /* 75%幅の列 */
+  [class*="col(sm:75,"], [class*="grid(sm:75,"] > * {
+    grid-column: span 9;
+  }
+
+  /* 100%幅の列 */
+  [class*="col(sm:100,"], [class*="grid(sm:100,"] > * {
     grid-column: span 12;
-    padding: 10px;
+  }
+
+  /* 1列幅から12列幅までの設定 */
+  [class*="col(sm:1,"], [class*="grid(sm:1,"] > * {
+    grid-column: span 1;
+  }
+
+  [class*="col(sm:2,"], [class*="grid(sm:2,"] > * {
+    grid-column: span 2;
+  }
+
+  [class*="col(sm:3,"], [class*="grid(sm:3,"] > * {
+    grid-column: span 3;
+  }
+
+  [class*="col(sm:4,"], [class*="grid(sm:4,"] > * {
+    grid-column: span 4;
+  }
+
+  [class*="col(sm:5,"], [class*="grid(sm:5,"] > * {
+    grid-column: span 5;
+  }
+
+  [class*="col(sm:6,"], [class*="grid(sm:6,"] > * {
+    grid-column: span 6;
+  }
+
+  [class*="col(sm:7,"], [class*="grid(sm:7,"] > * {
+    grid-column: span 7;
+  }
+
+  [class*="col(sm:8,"], [class*="grid(sm:8,"] > * {
+    grid-column: span 8;
+  }
+
+  [class*="col(sm:9,"], [class*="grid(sm:9,"] > * {
+    grid-column: span 9;
+  }
+
+  [class*="col(sm:10,"], [class*="grid(sm:10,"] > * {
+    grid-column: span 10;
+  }
+
+  [class*="col(sm:11,"], [class*="grid(sm:11,"] > * {
+    grid-column: span 11;
+  }
+
+  [class*="col(sm:12,"], [class*="grid(sm:12,"] > * {
+    grid-column: span 12;
+  }
 }
 
-/* 600px */
-@media only screen and (min-width: 600px) {
-    .col\(50\) {
-        grid-column: span 6;
-    }
-    .col\(25\) {
-        grid-column: span 3;
-    }
-    .col\(75\) {
-        grid-column: span 9;
-    }
-    .col\(100\) {
-        grid-column: span 12;
-    }
+/* タブレット用のグリッド設定 */
+@container style(--tablet) {
+  /* 50%幅の列 */
+  [class*="col(sm:"][class*=",md:50,"], [class*="grid(sm:"][class*=",md:50,"] > * {
+    grid-column: span 6;
+  }
 
-    .col\(1\) {
-        grid-column: span 1;
-    }
+  /* 25%幅の列 */
+  [class*="col(sm:"][class*=",md:25,"], [class*="grid(sm:"][class*=",md:25,"] > * {
+    grid-column: span 3;
+  }
 
-    .col\(2\) {
-        grid-column: span 2;
-    }
+  /* 75%幅の列 */
+  [class*="col(sm:"][class*=",md:75,"], [class*="grid(sm:"][class*=",md:75,"] > * {
+    grid-column: span 9;
+  }
 
-    .col\(3\) {
-        grid-column: span 3;
-    }
+  /* 100%幅の列 */
+  [class*="col(sm:"][class*=",md:100,"], [class*="grid(sm:"][class*=",md:100,"] > * {
+    grid-column: span 12;
+  }
 
-    .col\(4\) {
-        grid-column: span 4;
-    }
+  /* 1列幅から12列幅までの設定 */
+  [class*="col(sm:"][class*=",md:1,"], [class*="grid(sm:"][class*=",md:1,"] > * {
+    grid-column: span 1;
+  }
 
-    .col\(5\) {
-        grid-column: span 5;
-    }
+  [class*="col(sm:"][class*=",md:2,"], [class*="grid(sm:"][class*=",md:2,"] > * {
+    grid-column: span 2;
+  }
 
-    .col\(6\) {
-        grid-column: span 6;
-    }
+  [class*="col(sm:"][class*=",md:3,"], [class*="grid(sm:"][class*=",md:3,"] > * {
+    grid-column: span 3;
+  }
 
-    .col\(7\) {
-        grid-column: span 7;
-    }
+  [class*="col(sm:"][class*=",md:4,"], [class*="grid(sm:"][class*=",md:4,"] > * {
+    grid-column: span 4;
+  }
 
-    .col\(8\) {
-        grid-column: span 8;
-    }
+  [class*="col(sm:"][class*=",md:5,"], [class*="grid(sm:"][class*=",md:5,"] > * {
+    grid-column: span 5;
+  }
 
-    .col\(9\) {
-        grid-column: span 9;
-    }
+  [class*="col(sm:"][class*=",md:6,"], [class*="grid(sm:"][class*=",md:6,"] > * {
+    grid-column: span 6;
+  }
 
-    .col\(10\) {
-        grid-column: span 10;
-    }
+  [class*="col(sm:"][class*=",md:7,"], [class*="grid(sm:"][class*=",md:7,"] > * {
+    grid-column: span 7;
+  }
 
-    .col\(11\) {
-        grid-column: span 11;
-    }
+  [class*="col(sm:"][class*=",md:8,"], [class*="grid(sm:"][class*=",md:8,"] > * {
+    grid-column: span 8;
+  }
 
-    .col\(12\) {
-        grid-column: span 12;
-    }
+  [class*="col(sm:"][class*=",md:9,"], [class*="grid(sm:"][class*=",md:9,"] > * {
+    grid-column: span 9;
+  }
+
+  [class*="col(sm:"][class*=",md:10,"], [class*="grid(sm:"][class*=",md:10,"] > * {
+    grid-column: span 10;
+  }
+
+  [class*="col(sm:"][class*=",md:11,"], [class*="grid(sm:"][class*=",md:11,"] > * {
+    grid-column: span 11;
+  }
+
+  [class*="col(sm:"][class*=",md:12,"], [class*="grid(sm:"][class*=",md:12,"] > * {
+    grid-column: span 12;
+  }
 }
 
-/* 600px - 800px */
-@media only screen and (max-width: 800px) and (min-width: 600px) {
-    .col\(50\) {
-        grid-column: span 6;
-    }
-    .col\(25\) {
-        grid-column: span 3;
-    }
-    .col\(75\) {
-        grid-column: span 9;
-    }
-    .col\(100\) {
-        grid-column: span 12;
-    }
+/* デスクトップ用のグリッド設定 */
+@container style(--desktop) {
+  /* 50%幅の列 */
+  [class*="col(sm:"][class*=",md:"][class*=",lg:50)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:50)"] > * {
+    grid-column: span 6;
+  }
+  /* 25%幅の列 */
+  [class*="col(sm:"][class*=",md:"][class*=",lg:25)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:25)"] > * {
+    grid-column: span 3;
+  }
+  /* 75%幅の列 */
+  [class*="col(sm:"][class*=",md:"][class*=",lg:75)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:75)"] > * {
+    grid-column: span 9;
+  }
+  /* 100%幅の列 */
+  [class*="col(sm:"][class*=",md:"][class*=",lg:100)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:100)"] > * {
+    grid-column: span 12;
+  }
+
+  /* 1列幅から12列幅までの設定 */
+  [class*="col(sm:"][class*=",md:"][class*=",lg:1)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:1)"] > * {
+    grid-column: span 1;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:2)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:2)"] > * {
+    grid-column: span 2;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:3)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:3)"] > * {
+    grid-column: span 3;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:4)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:4)"] > * {
+    grid-column: span 4;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:5)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:5)"] > * {
+    grid-column: span 5;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:6)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:6)"] > * {
+    grid-column: span 6;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:7)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:7)"] > * {
+    grid-column: span 7;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:8)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:8)"] > * {
+    grid-column: span 8;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:9)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:9)"] > * {
+    grid-column: span 9;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:10)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:10)"] > * {
+    grid-column: span 10;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:11)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:11)"] > * {
+    grid-column: span 11;
+  }
+
+  [class*="col(sm:"][class*=",md:"][class*=",lg:12)"], [class*="grid(sm:"][class*=",md:"][class*=",lg:12)"] > * {
+    grid-column: span 12;
+  }
 }
