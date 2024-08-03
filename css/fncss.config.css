@@ -1,20 +1,14 @@
 :root {
+  /* nudge: ベースとなる間隔の単位。
+   Figmaのオートレイアウトのスペーシングに相当。
+   レスポンシブデザインのために、ビューポートサイズに応じて変化する。 */
+  --nudge: 8px;
+
   /* 既存の色設定 */
   --primary-color: hsl(151, 37%, 54%);
   --dark-ratio1: 20%;
   --light-ratio1: 80%;
   --light-ratio2: 90%;
-
-/* ブレイクポイント */
-  @media (600px <= width) {
-    --mobile: true;
-  }
-  @media (900px <= width) {
-    --tablet: true;
-  }
-  @media (1200px <= width) {
-    --desktop: true;
-  }
 
   /* フォントファミリー */
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -22,7 +16,7 @@
   --font-mono: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
   /* フォントサイズ */
-  --font-size-base: 16px;
+  --font-size-base: calc(var(--nudge) * 2px);
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-lg: 1.125rem;
