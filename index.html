@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/fncss.config.css">
     <link rel="stylesheet" href="./css/fncss.theme.css">
     <link rel="stylesheet" href="./css/fncss.typography.css">
-    <link rel="stylesheet" href="./css/fncss.layout.css">
+    <link rel="stylesheet" href="./css/fncss.grid.css">
 
     <title>FNCSS Test</title>
     <style>
@@ -33,47 +33,58 @@
         4. レイアウトグリッドテスト
     </h2>
 
+    <!-- <div class="grid"> -->
+    <!--     <div class="sm(100) md(50) lg(25)"> -->
+    <!--         <div class="demo-box">Col 1</div> -->
+    <!--     </div> -->
+    <!--     <div class="sm(100) md(50) lg(25)"> -->
+    <!--         <div class="demo-box">Col 2</div> -->
+    <!--     </div> -->
+    <!--     <div class="sm(100) md(50) lg(25)"> -->
+    <!--         <div class="demo-box">Col 3</div> -->
+    <!--     </div> -->
+    <!--     <div class="sm(100) md(50) lg(25)"> -->
+    <!--         <div class="demo-box">Col 4</div> -->
+    <!--     </div> -->
+    <!-- </div> -->
+    <!---->
+    <!-- <div class="grid"> -->
+    <!--     <div class="sm(50) md(33) lg(25)"> -->
+    <!--         <div class="demo-box">Col 1</div> -->
+    <!--     </div> -->
+    <!--     <div class="sm(50) md(33) lg(25)"> -->
+    <!--         <div class="demo-box">Col 2</div> -->
+    <!--     </div> -->
+    <!--     <div class="sm(50) md(33) lg(25)"> -->
+    <!--         <div class="demo-box">Col 3</div> -->
+    <!--     </div> -->
+    <!--     <div class="sm(50) md(33) lg(25)"> -->
+    <!--         <div class="demo-box">Col 4</div> -->
+    <!--     </div> -->
+    <!-- </div> -->
+    <!---->
+    <!-- <div class="grid"> -->
+    <!--     <div class="sm(100) md(75) lg(75)"> -->
+    <!--         <div class="demo-box">Main Content</div> -->
+    <!--     </div> -->
+    <!--     <div class="sm(100) md(25) lg(25)"> -->
+    <!--         <div class="demo-box">Sidebar</div> -->
+    <!--     </div> -->
+    <!-- </div> -->
+
+    <h1 class="font-size(4xl)">こっちは子要素個別に指定</h1>
     <div class="grid">
-        <div class="col(sm:100,md:50,lg:25)">
-            <div class="demo-box">Col 1</div>
-        </div>
-        <div class="col(sm:100,md:50,lg:25)">
-            <div class="demo-box">Col 2</div>
-        </div>
-        <div class="col(sm:100,md:50,lg:25)">
-            <div class="demo-box">Col 3</div>
-        </div>
-        <div class="col(sm:100,md:50,lg:25)">
-            <div class="demo-box">Col 4</div>
-        </div>
+        <div class="sm(12) md(6) lg(3) xl(2) xxl(1)"><div class="demo-box">Item 1</div></div>
+        <div class="sm(12) md(6) lg(3) xl(2) xxl(1)"><div class="demo-box">Item 2</div></div>
+        <div class="sm(12) md(6) lg(3) xl(2) xxl(1)"><div class="demo-box">Item 3</div></div>
+        <div class="sm(12) md(6) lg(3) xl(2) xxl(1)"><div class="demo-box">Item 4</div></div>
+        <div class="sm(12) md(6) lg(3) xl(2) xxl(1)"><div class="demo-box">Item 5</div></div>
+        <div class="sm(12) md(6) lg(3) xl(2) xxl(1)"><div class="demo-box">Item 6</div></div>
     </div>
 
-    <div class="grid">
-        <div class="col(sm:50,md:33,lg:25)">
-            <div class="demo-box">Col 1</div>
-        </div>
-        <div class="col(sm:50,md:33,lg:25)">
-            <div class="demo-box">Col 2</div>
-        </div>
-        <div class="col(sm:50,md:33,lg:25)">
-            <div class="demo-box">Col 3</div>
-        </div>
-        <div class="col(sm:50,md:33,lg:25)">
-            <div class="demo-box">Col 4</div>
-        </div>
-    </div>
-
-    <div class="grid">
-        <div class="col(sm:100,md:75,lg:50)">
-            <div class="demo-box">Main Content</div>
-        </div>
-        <div class="col(sm:100,md:25,lg:50)">
-            <div class="demo-box">Sidebar</div>
-        </div>
-    </div>
-
-    <div class="grid(sm:12,md:3,lg:2)">
-        <div><div class="demo-box">Item 1</div></div>
+    <h1 class="font-size(4xl)">こっちは親要素一括</h1>
+    <div class="grid sm(12) md(6) lg(3) xl(2) xxl(1)">
+        <div class="xxl(6)"><div class="demo-box">Item 1</div></div>
         <div><div class="demo-box">Item 2</div></div>
         <div><div class="demo-box">Item 3</div></div>
         <div><div class="demo-box">Item 4</div></div>

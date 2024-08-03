@@ -1,0 +1,115 @@
+/* グリッドの基本設定 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* デフォルトの列設定 */
+.grid > * {
+  grid-column: span 12;
+}
+
+/* スマートフォン (SM) 用のグリッド設定 */
+@media (640px <= width) {
+  .grid > .sm\(25\), .grid.sm\(25\) > * { grid-column: span 3; }
+  .grid > .sm\(50\), .grid.sm\(50\) > * { grid-column: span 6; }
+  .grid > .sm\(75\), .grid.sm\(75\) > * { grid-column: span 9; }
+  .grid > .sm\(100\), .grid.sm\(100\) > * { grid-column: span 12; }
+
+  .grid > .sm\(1\), .grid.sm\(1\) > * { grid-column: span 1; }
+  .grid > .sm\(2\), .grid.sm\(2\) > * { grid-column: span 2; }
+  .grid > .sm\(3\), .grid.sm\(3\) > * { grid-column: span 3; }
+  .grid > .sm\(4\), .grid.sm\(4\) > * { grid-column: span 4; }
+  .grid > .sm\(5\), .grid.sm\(5\) > * { grid-column: span 5; }
+  .grid > .sm\(6\), .grid.sm\(6\) > * { grid-column: span 6; }
+  .grid > .sm\(7\), .grid.sm\(7\) > * { grid-column: span 7; }
+  .grid > .sm\(8\), .grid.sm\(8\) > * { grid-column: span 8; }
+  .grid > .sm\(9\), .grid.sm\(9\) > * { grid-column: span 9; }
+  .grid > .sm\(10\), .grid.sm\(10\) > * { grid-column: span 10; }
+  .grid > .sm\(11\), .grid.sm\(11\) > * { grid-column: span 11; }
+  .grid > .sm\(12\), .grid.sm\(12\) > * { grid-column: span 12; }
+}
+
+/* タブレット (MD) 用のグリッド設定 */
+@media (768px <= width) {
+  .grid > .md\(25\), .grid.md\(25\) > * { grid-column: span 3; }
+  .grid > .md\(50\), .grid.md\(50\) > * { grid-column: span 6; }
+  .grid > .md\(75\), .grid.md\(75\) > * { grid-column: span 9; }
+  .grid > .md\(100\), .grid.md\(100\) > * { grid-column: span 12; }
+
+  .grid > .md\(1\), .grid.md\(1\) > * { grid-column: span 1; }
+  .grid > .md\(2\), .grid.md\(2\) > * { grid-column: span 2; }
+  .grid > .md\(3\), .grid.md\(3\) > * { grid-column: span 3; }
+  .grid > .md\(4\), .grid.md\(4\) > * { grid-column: span 4; }
+  .grid > .md\(5\), .grid.md\(5\) > * { grid-column: span 5; }
+  .grid > .md\(6\), .grid.md\(6\) > * { grid-column: span 6; }
+  .grid > .md\(7\), .grid.md\(7\) > * { grid-column: span 7; }
+  .grid > .md\(8\), .grid.md\(8\) > * { grid-column: span 8; }
+  .grid > .md\(9\), .grid.md\(9\) > * { grid-column: span 9; }
+  .grid > .md\(10\), .grid.md\(10\) > * { grid-column: span 10; }
+  .grid > .md\(11\), .grid.md\(11\) > * { grid-column: span 11; }
+  .grid > .md\(12\), .grid.md\(12\) > * { grid-column: span 12; }
+}
+
+/* ラップトップ (LG) 用のグリッド設定 */
+@media (1024px <= width) {
+  .grid > .lg\(25\), .grid.lg\(25\) > * { grid-column: span 3; }
+  .grid > .lg\(50\), .grid.lg\(50\) > * { grid-column: span 6; }
+  .grid > .lg\(75\), .grid.lg\(75\) > * { grid-column: span 9; }
+  .grid > .lg\(100\), .grid.lg\(100\) > * { grid-column: span 12; }
+
+  .grid > .lg\(1\), .grid.lg\(1\) > * { grid-column: span 1; }
+  .grid > .lg\(2\), .grid.lg\(2\) > * { grid-column: span 2; }
+  .grid > .lg\(3\), .grid.lg\(3\) > * { grid-column: span 3; }
+  .grid > .lg\(4\), .grid.lg\(4\) > * { grid-column: span 4; }
+  .grid > .lg\(5\), .grid.lg\(5\) > * { grid-column: span 5; }
+  .grid > .lg\(6\), .grid.lg\(6\) > * { grid-column: span 6; }
+  .grid > .lg\(7\), .grid.lg\(7\) > * { grid-column: span 7; }
+  .grid > .lg\(8\), .grid.lg\(8\) > * { grid-column: span 8; }
+  .grid > .lg\(9\), .grid.lg\(9\) > * { grid-column: span 9; }
+  .grid > .lg\(10\), .grid.lg\(10\) > * { grid-column: span 10; }
+  .grid > .lg\(11\), .grid.lg\(11\) > * { grid-column: span 11; }
+  .grid > .lg\(12\), .grid.lg\(12\) > * { grid-column: span 12; }
+}
+
+/* デスクトップ (XL) 用のグリッド設定 */
+@media (1280px <= width) {
+  .grid > .xl\(25\), .grid.xl\(25\) > * { grid-column: span 3; }
+  .grid > .xl\(50\), .grid.xl\(50\) > * { grid-column: span 6; }
+  .grid > .xl\(75\), .grid.xl\(75\) > * { grid-column: span 9; }
+  .grid > .xl\(100\), .grid.xl\(100\) > * { grid-column: span 12; }
+
+  .grid > .xl\(1\), .grid.xl\(1\) > * { grid-column: span 1; }
+  .grid > .xl\(2\), .grid.xl\(2\) > * { grid-column: span 2; }
+  .grid > .xl\(3\), .grid.xl\(3\) > * { grid-column: span 3; }
+  .grid > .xl\(4\), .grid.xl\(4\) > * { grid-column: span 4; }
+  .grid > .xl\(5\), .grid.xl\(5\) > * { grid-column: span 5; }
+  .grid > .xl\(6\), .grid.xl\(6\) > * { grid-column: span 6; }
+  .grid > .xl\(7\), .grid.xl\(7\) > * { grid-column: span 7; }
+  .grid > .xl\(8\), .grid.xl\(8\) > * { grid-column: span 8; }
+  .grid > .xl\(9\), .grid.xl\(9\) > * { grid-column: span 9; }
+  .grid > .xl\(10\), .grid.xl\(10\) > * { grid-column: span 10; }
+  .grid > .xl\(11\), .grid.xl\(11\) > * { grid-column: span 11; }
+  .grid > .xl\(12\), .grid.xl\(12\) > * { grid-column: span 12; }
+}
+
+/* ワイドスクリーン (XXL) 用のグリッド設定 */
+@media (1536px <= width) {
+  .grid > .xxl\(25\), .grid.xxl\(25\) > * { grid-column: span 3; }
+  .grid > .xxl\(50\), .grid.xxl\(50\) > * { grid-column: span 6; }
+  .grid > .xxl\(75\), .grid.xxl\(75\) > * { grid-column: span 9; }
+  .grid > .xxl\(100\), .grid.xxl\(100\) > * { grid-column: span 12; }
+
+  .grid > .xxl\(1\), .grid.xxl\(1\) > * { grid-column: span 1; }
+  .grid > .xxl\(2\), .grid.xxl\(2\) > * { grid-column: span 2; }
+  .grid > .xxl\(3\), .grid.xxl\(3\) > * { grid-column: span 3; }
+  .grid > .xxl\(4\), .grid.xxl\(4\) > * { grid-column: span 4; }
+  .grid > .xxl\(5\), .grid.xxl\(5\) > * { grid-column: span 5; }
+  .grid > .xxl\(6\), .grid.xxl\(6\) > * { grid-column: span 6; }
+  .grid > .xxl\(7\), .grid.xxl\(7\) > * { grid-column: span 7; }
+  .grid > .xxl\(8\), .grid.xxl\(8\) > * { grid-column: span 8; }
+  .grid > .xxl\(9\), .grid.xxl\(9\) > * { grid-column: span 9; }
+  .grid > .xxl\(10\), .grid.xxl\(10\) > * { grid-column: span 10; }
+  .grid > .xxl\(11\), .grid.xxl\(11\) > * { grid-column: span 11; }
+  .grid > .xxl\(12\), .grid.xxl\(12\) > * { grid-column: span 12; }
+}
