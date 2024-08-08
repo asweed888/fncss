@@ -3,6 +3,7 @@
    Figmaのオートレイアウトのスペーシングに相当。
    レスポンシブデザインのために、ビューポートサイズに応じて変化する。 */
   --nudge: 8px;
+  --half-nudge: calc(var(--nudge) / 2);
 
   /* 既存の色設定 */
   --primary-color: hsl(151, 37%, 54%);
@@ -16,7 +17,7 @@
   --font-mono: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
   /* フォントサイズ */
-  --font-size-base: calc(var(--nudge) * 2px);
+  --font-size-base: calc(var(--nudge) * 2);
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-lg: 1.125rem;
