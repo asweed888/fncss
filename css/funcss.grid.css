@@ -1,0 +1,244 @@
+/* グリッドの基本設定 */
+[class*="grid("],
+[data-mobile*="grid("],
+[data-tablet*="grid("],
+[data-laptop*="grid("],
+[data-desktop*="grid("],
+[data-widescreen*="grid("]
+{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  /* & > * { */
+  /*   grid-column: span 12; */
+  /* } */
+}
+
+
+/* スマートフォン (SM) 用のグリッド設定 */
+@media (640px <= width) {
+
+  /* 全ての子要素に対して一括 */
+  [data-mobile*="grid(quarter:1)"] > * { grid-column: span 3; }
+  [data-mobile*="grid(quarter:2)"] > * { grid-column: span 6; }
+  [data-mobile*="grid(quarter:3)"] > * { grid-column: span 9; }
+  [data-mobile*="grid(quarter:4)"] > * { grid-column: span 12; }
+
+  [data-mobile*="grid(1)"] > * { grid-column: span 1; }
+  [data-mobile*="grid(2)"] > * { grid-column: span 2; }
+  [data-mobile*="grid(3)"] > * { grid-column: span 3; }
+  [data-mobile*="grid(4)"] > * { grid-column: span 4; }
+  [data-mobile*="grid(5)"] > * { grid-column: span 5; }
+  [data-mobile*="grid(6)"] > * { grid-column: span 6; }
+  [data-mobile*="grid(7)"] > * { grid-column: span 7; }
+  [data-mobile*="grid(8)"] > * { grid-column: span 8; }
+  [data-mobile*="grid(9)"] > * { grid-column: span 9; }
+  [data-mobile*="grid(10)"] > * { grid-column: span 10; }
+  [data-mobile*="grid(11)"] > * { grid-column: span 11; }
+  [data-mobile*="grid(12)"] > * { grid-column: span 12; }
+
+  /* columnごとに個別に指定 */
+  [class*="grid("],
+  [data-mobile*="grid("] {
+    & > [data-mobile*="col(quarter:1)"] { grid-column: span 3; }
+    & > [data-mobile*="col(quarter:2)"] { grid-column: span 6; }
+    & > [data-mobile*="col(quarter:3)"] { grid-column: span 9; }
+    & > [data-mobile*="col(quarter:4)"] { grid-column: span 12; }
+
+    & > [data-mobile*="col(1)"] { grid-column: span 1; }
+    & > [data-mobile*="col(2)"] { grid-column: span 2; }
+    & > [data-mobile*="col(3)"] { grid-column: span 3; }
+    & > [data-mobile*="col(4)"] { grid-column: span 4; }
+    & > [data-mobile*="col(5)"] { grid-column: span 5; }
+    & > [data-mobile*="col(6)"] { grid-column: span 6; }
+    & > [data-mobile*="col(7)"] { grid-column: span 7; }
+    & > [data-mobile*="col(8)"] { grid-column: span 8; }
+    & > [data-mobile*="col(9)"] { grid-column: span 9; }
+    & > [data-mobile*="col(10)"] { grid-column: span 10; }
+    & > [data-mobile*="col(11)"] { grid-column: span 11; }
+    & > [data-mobile*="col(12)"] { grid-column: span 12; }
+  }
+
+}
+
+/* タブレット (MD) 用のグリッド設定 */
+@media (768px <= width) {
+
+  /* 全ての子要素に対して一括 */
+  [data-tablet*="grid(quarter:1)"] > * { grid-column: span 3; }
+  [data-tablet*="grid(quarter:2)"] > * { grid-column: span 6; }
+  [data-tablet*="grid(quarter:3)"] > * { grid-column: span 9; }
+  [data-tablet*="grid(quarter:4)"] > * { grid-column: span 12; }
+
+  [data-tablet*="grid(1)"] > * { grid-column: span 1; }
+  [data-tablet*="grid(2)"] > * { grid-column: span 2; }
+  [data-tablet*="grid(3)"] > * { grid-column: span 3; }
+  [data-tablet*="grid(4)"] > * { grid-column: span 4; }
+  [data-tablet*="grid(5)"] > * { grid-column: span 5; }
+  [data-tablet*="grid(6)"] > * { grid-column: span 6; }
+  [data-tablet*="grid(7)"] > * { grid-column: span 7; }
+  [data-tablet*="grid(8)"] > * { grid-column: span 8; }
+  [data-tablet*="grid(9)"] > * { grid-column: span 9; }
+  [data-tablet*="grid(10)"] > * { grid-column: span 10; }
+  [data-tablet*="grid(11)"] > * { grid-column: span 11; }
+  [data-tablet*="grid(12)"] > * { grid-column: span 12; }
+
+  /* columnごとに個別に指定 */
+  [class*="grid("],
+  [data-tablet*="grid("]
+  {
+    & > [data-tablet*="col(quarter:1)"] { grid-column: span 3; }
+    & > [data-tablet*="col(quarter:2)"] { grid-column: span 6; }
+    & > [data-tablet*="col(quarter:3)"] { grid-column: span 9; }
+    & > [data-tablet*="col(quarter:4)"] { grid-column: span 12; }
+
+    & > [data-tablet*="col(1)"] { grid-column: span 1; }
+    & > [data-tablet*="col(2)"] { grid-column: span 2; }
+    & > [data-tablet*="col(3)"] { grid-column: span 3; }
+    & > [data-tablet*="col(4)"] { grid-column: span 4; }
+    & > [data-tablet*="col(5)"] { grid-column: span 5; }
+    & > [data-tablet*="col(6)"] { grid-column: span 6; }
+    & > [data-tablet*="col(7)"] { grid-column: span 7; }
+    & > [data-tablet*="col(8)"] { grid-column: span 8; }
+    & > [data-tablet*="col(9)"] { grid-column: span 9; }
+    & > [data-tablet*="col(10)"] { grid-column: span 10; }
+    & > [data-tablet*="col(11)"] { grid-column: span 11; }
+    & > [data-tablet*="col(12)"] { grid-column: span 12; }
+  }
+
+}
+
+/* ラップトップ (LG) 用のグリッド設定 */
+@media (1024px <= width) {
+  /* 全ての子要素に対して一括 */
+  [data-laptop*="grid(quarter:1)"] > * { grid-column: span 3; }
+  [data-laptop*="grid(quarter:2)"] > * { grid-column: span 6; }
+  [data-laptop*="grid(quarter:3)"] > * { grid-column: span 9; }
+  [data-laptop*="grid(quarter:4)"] > * { grid-column: span 12; }
+
+  [data-laptop*="grid(1)"] > * { grid-column: span 1; }
+  [data-laptop*="grid(2)"] > * { grid-column: span 2; }
+  [data-laptop*="grid(3)"] > * { grid-column: span 3; }
+  [data-laptop*="grid(4)"] > * { grid-column: span 4; }
+  [data-laptop*="grid(5)"] > * { grid-column: span 5; }
+  [data-laptop*="grid(6)"] > * { grid-column: span 6; }
+  [data-laptop*="grid(7)"] > * { grid-column: span 7; }
+  [data-laptop*="grid(8)"] > * { grid-column: span 8; }
+  [data-laptop*="grid(9)"] > * { grid-column: span 9; }
+  [data-laptop*="grid(10)"] > * { grid-column: span 10; }
+  [data-laptop*="grid(11)"] > * { grid-column: span 11; }
+  [data-laptop*="grid(12)"] > * { grid-column: span 12; }
+
+  /* columnごとに個別に指定 */
+  [class*="grid("],
+  [data-laptop*="grid("]
+  {
+    & > [data-laptop*="col(quarter:1)"] { grid-column: span 3; }
+    & > [data-laptop*="col(quarter:2)"] { grid-column: span 6; }
+    & > [data-laptop*="col(quarter:3)"] { grid-column: span 9; }
+    & > [data-laptop*="col(quarter:4)"] { grid-column: span 12; }
+
+    & > [data-laptop*="col(1)"] { grid-column: span 1; }
+    & > [data-laptop*="col(2)"] { grid-column: span 2; }
+    & > [data-laptop*="col(3)"] { grid-column: span 3; }
+    & > [data-laptop*="col(4)"] { grid-column: span 4; }
+    & > [data-laptop*="col(5)"] { grid-column: span 5; }
+    & > [data-laptop*="col(6)"] { grid-column: span 6; }
+    & > [data-laptop*="col(7)"] { grid-column: span 7; }
+    & > [data-laptop*="col(8)"] { grid-column: span 8; }
+    & > [data-laptop*="col(9)"] { grid-column: span 9; }
+    & > [data-laptop*="col(10)"] { grid-column: span 10; }
+    & > [data-laptop*="col(11)"] { grid-column: span 11; }
+    & > [data-laptop*="col(12)"] { grid-column: span 12; }
+  }
+}
+
+/* デスクトップ (XL) 用のグリッド設定 */
+@media (1280px <= width) {
+  /* 全ての子要素に対して一括 */
+  [data-desktop*="grid(quarter:1)"] > * { grid-column: span 3; }
+  [data-desktop*="grid(quarter:2)"] > * { grid-column: span 6; }
+  [data-desktop*="grid(quarter:3)"] > * { grid-column: span 9; }
+  [data-desktop*="grid(quarter:4)"] > * { grid-column: span 12; }
+
+  [data-desktop*="grid(1)"] > * { grid-column: span 1; }
+  [data-desktop*="grid(2)"] > * { grid-column: span 2; }
+  [data-desktop*="grid(3)"] > * { grid-column: span 3; }
+  [data-desktop*="grid(4)"] > * { grid-column: span 4; }
+  [data-desktop*="grid(5)"] > * { grid-column: span 5; }
+  [data-desktop*="grid(6)"] > * { grid-column: span 6; }
+  [data-desktop*="grid(7)"] > * { grid-column: span 7; }
+  [data-desktop*="grid(8)"] > * { grid-column: span 8; }
+  [data-desktop*="grid(9)"] > * { grid-column: span 9; }
+  [data-desktop*="grid(10)"] > * { grid-column: span 10; }
+  [data-desktop*="grid(11)"] > * { grid-column: span 11; }
+  [data-desktop*="grid(12)"] > * { grid-column: span 12; }
+
+  /* columnごとに個別に指定 */
+  [class*="grid("],
+  [data-desktop*="grid("]
+  {
+    & > [data-desktop*="col(quarter:1)"] { grid-column: span 3; }
+    & > [data-desktop*="col(quarter:2)"] { grid-column: span 6; }
+    & > [data-desktop*="col(quarter:3)"] { grid-column: span 9; }
+    & > [data-desktop*="col(quarter:4)"] { grid-column: span 12; }
+
+    & > [data-desktop*="col(1)"] { grid-column: span 1; }
+    & > [data-desktop*="col(2)"] { grid-column: span 2; }
+    & > [data-desktop*="col(3)"] { grid-column: span 3; }
+    & > [data-desktop*="col(4)"] { grid-column: span 4; }
+    & > [data-desktop*="col(5)"] { grid-column: span 5; }
+    & > [data-desktop*="col(6)"] { grid-column: span 6; }
+    & > [data-desktop*="col(7)"] { grid-column: span 7; }
+    & > [data-desktop*="col(8)"] { grid-column: span 8; }
+    & > [data-desktop*="col(9)"] { grid-column: span 9; }
+    & > [data-desktop*="col(10)"] { grid-column: span 10; }
+    & > [data-desktop*="col(11)"] { grid-column: span 11; }
+    & > [data-desktop*="col(12)"] { grid-column: span 12; }
+  }
+}
+
+/* ワイドスクリーン (XXL) 用のグリッド設定 */
+@media (1536px <= width) {
+  /* 全ての子要素に対して一括 */
+  [data-widescreen*="grid(quarter:1)"] > * { grid-column: span 3; }
+  [data-widescreen*="grid(quarter:2)"] > * { grid-column: span 6; }
+  [data-widescreen*="grid(quarter:3)"] > * { grid-column: span 9; }
+  [data-widescreen*="grid(quarter:4)"] > * { grid-column: span 12; }
+
+  [data-widescreen*="grid(1)"] > * { grid-column: span 1; }
+  [data-widescreen*="grid(2)"] > * { grid-column: span 2; }
+  [data-widescreen*="grid(3)"] > * { grid-column: span 3; }
+  [data-widescreen*="grid(4)"] > * { grid-column: span 4; }
+  [data-widescreen*="grid(5)"] > * { grid-column: span 5; }
+  [data-widescreen*="grid(6)"] > * { grid-column: span 6; }
+  [data-widescreen*="grid(7)"] > * { grid-column: span 7; }
+  [data-widescreen*="grid(8)"] > * { grid-column: span 8; }
+  [data-widescreen*="grid(9)"] > * { grid-column: span 9; }
+  [data-widescreen*="grid(10)"] > * { grid-column: span 10; }
+  [data-widescreen*="grid(11)"] > * { grid-column: span 11; }
+  [data-widescreen*="grid(12)"] > * { grid-column: span 12; }
+
+  /* columnごとに個別に指定 */
+  [class*="grid("],
+  [data-widescreen*="grid("]
+  {
+    & > [data-widescreen*="col(quarter:1)"] { grid-column: span 3; }
+    & > [data-widescreen*="col(quarter:2)"] { grid-column: span 6; }
+    & > [data-widescreen*="col(quarter:3)"] { grid-column: span 9; }
+    & > [data-widescreen*="col(quarter:4)"] { grid-column: span 12; }
+
+    & > [data-widescreen*="col(1)"] { grid-column: span 1; }
+    & > [data-widescreen*="col(2)"] { grid-column: span 2; }
+    & > [data-widescreen*="col(3)"] { grid-column: span 3; }
+    & > [data-widescreen*="col(4)"] { grid-column: span 4; }
+    & > [data-widescreen*="col(5)"] { grid-column: span 5; }
+    & > [data-widescreen*="col(6)"] { grid-column: span 6; }
+    & > [data-widescreen*="col(7)"] { grid-column: span 7; }
+    & > [data-widescreen*="col(8)"] { grid-column: span 8; }
+    & > [data-widescreen*="col(9)"] { grid-column: span 9; }
+    & > [data-widescreen*="col(10)"] { grid-column: span 10; }
+    & > [data-widescreen*="col(11)"] { grid-column: span 11; }
+    & > [data-widescreen*="col(12)"] { grid-column: span 12; }
+  }
+}
