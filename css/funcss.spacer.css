@@ -1,162 +1,180 @@
 /* 全方向一括margin */
-.m\(x0\) {
+.m\(nudge\*0\) {
   margin: 0;
 }
-.m\(x0\.5\) {
+.m\(nudge\*0\.5\) {
   margin: calc(var(--nudge) * 0.5);
 }
-.m\(x1\) {
+.m\(nudge\*1\) {
   margin: calc(var(--nudge));
 }
-.m\(x1\.5\) {
+.m\(nudge\*1\.5\) {
   margin: calc(var(--nudge) * 1.5);
 }
-.m\(x2\) {
+.m\(nudge\*2\) {
   margin: calc(var(--nudge) * 2);
 }
-.m\(x3\) {
+.m\(nudge\*3\) {
   margin: calc(var(--nudge) * 3);
 }
-.m\(x6\) {
+.m\(nudge\*6\) {
   margin: calc(var(--nudge) * 6);
+}
+.m\(nudge\*12\) {
+  margin: calc(var(--nudge) * 12);
 }
 .m\(auto\) {
   margin: auto;
 }
 
-
 /* margin-top */
-.mt\(x0\) {
+.mt\(nudge\*0\) {
   margin-top: 0;
 }
-.mt\(x0\.5\) {
+.mt\(nudge\*0\.5\) {
   margin-top: calc(var(--nudge) * 0.5);
 }
-.mt\(x1\) {
+.mt\(nudge\*1\) {
   margin-top: calc(var(--nudge));
 }
-.mt\(x1\.5\) {
+.mt\(nudge\*1\.5\) {
   margin-top: calc(var(--nudge) * 1.5);
 }
-.mt\(x2\) {
+.mt\(nudge\*2\) {
   margin-top: calc(var(--nudge) * 2);
 }
-.mt\(x3\) {
+.mt\(nudge\*3\) {
   margin-top: calc(var(--nudge) * 3);
 }
-.mt\(x6\) {
+.mt\(nudge\*6\) {
   margin-top: calc(var(--nudge) * 6);
+}
+.mt\(nudge\*12\) {
+  margin-top: calc(var(--nudge) * 12);
 }
 .mt\(auto\) {
   margin-top: auto;
 }
 
 /* margin-right */
-.mr\(x0\) {
+.mr\(nudge\*0\) {
   margin-right: 0;
 }
-.mr\(x0\.5\) {
+.mr\(nudge\*0\.5\) {
   margin-right: calc(var(--nudge) * 0.5);
 }
-.mr\(x1\) {
+.mr\(nudge\*1\) {
   margin-right: calc(var(--nudge));
 }
-.mr\(x1\.5\) {
+.mr\(nudge\*1\.5\) {
   margin-right: calc(var(--nudge) * 1.5);
 }
-.mr\(x2\) {
+.mr\(nudge\*2\) {
   margin-right: calc(var(--nudge) * 2);
 }
-.mr\(x3\) {
+.mr\(nudge\*3\) {
   margin-right: calc(var(--nudge) * 3);
 }
-.mr\(x6\) {
+.mr\(nudge\*6\) {
   margin-right: calc(var(--nudge) * 6);
+}
+.mr\(nudge\*12\) {
+  margin-right: calc(var(--nudge) * 12);
 }
 .mr\(auto\) {
   margin-right: auto;
 }
 
 /* margin-bottom */
-.mb\(x0\) {
+.mb\(nudge\*0\) {
   margin-bottom: 0;
 }
-.mb\(x0\.5\) {
+.mb\(nudge\*0\.5\) {
   margin-bottom: calc(var(--nudge) * 0.5);
 }
-.mb\(x1\) {
+.mb\(nudge\*1\) {
   margin-bottom: calc(var(--nudge));
 }
-.mb\(x1\.5\) {
+.mb\(nudge\*1\.5\) {
   margin-bottom: calc(var(--nudge) * 1.5);
 }
-.mb\(x2\) {
+.mb\(nudge\*2\) {
   margin-bottom: calc(var(--nudge) * 2);
 }
-.mb\(x3\) {
+.mb\(nudge\*3\) {
   margin-bottom: calc(var(--nudge) * 3);
 }
-.mb\(x6\) {
+.mb\(nudge\*6\) {
   margin-bottom: calc(var(--nudge) * 6);
+}
+.mb\(nudge\*12\) {
+  margin-bottom: calc(var(--nudge) * 12);
 }
 .mb\(auto\) {
   margin-bottom: auto;
 }
 
 /* margin-left */
-.ml\(x0\) {
+.ml\(nudge\*0\) {
   margin-left: 0;
 }
-.ml\(x0\.5\) {
+.ml\(nudge\*0\.5\) {
   margin-left: calc(var(--nudge) * 0.5);
 }
-.ml\(x1\) {
+.ml\(nudge\*1\) {
   margin-left: calc(var(--nudge));
 }
-.ml\(x1\.5\) {
+.ml\(nudge\*1\.5\) {
   margin-left: calc(var(--nudge) * 1.5);
 }
-.ml\(x2\) {
+.ml\(nudge\*2\) {
   margin-left: calc(var(--nudge) * 2);
 }
-.ml\(x3\) {
+.ml\(nudge\*3\) {
   margin-left: calc(var(--nudge) * 3);
 }
-.ml\(x6\) {
+.ml\(nudge\*6\) {
   margin-left: calc(var(--nudge) * 6);
+}
+.ml\(nudge\*12\) {
+  margin-left: calc(var(--nudge) * 12);
 }
 .ml\(auto\) {
   margin-left: auto;
 }
 
 /* margin-x (左右マージン) */
-.mx\(x0\) {
+.mx\(nudge\*0\) {
   margin-left: 0;
   margin-right: 0;
 }
-.mx\(x0\.5\) {
+.mx\(nudge\*0\.5\) {
   margin-left: calc(var(--nudge) * 0.5);
   margin-right: calc(var(--nudge) * 0.5);
 }
-.mx\(x1\) {
+.mx\(nudge\*1\) {
   margin-left: calc(var(--nudge));
   margin-right: calc(var(--nudge));
 }
-.mx\(x1\.5\) {
+.mx\(nudge\*1\.5\) {
   margin-left: calc(var(--nudge) * 1.5);
   margin-right: calc(var(--nudge) * 1.5);
 }
-.mx\(x2\) {
+.mx\(nudge\*2\) {
   margin-left: calc(var(--nudge) * 2);
   margin-right: calc(var(--nudge) * 2);
 }
-.mx\(x3\) {
+.mx\(nudge\*3\) {
   margin-left: calc(var(--nudge) * 3);
   margin-right: calc(var(--nudge) * 3);
 }
-.mx\(x6\) {
+.mx\(nudge\*6\) {
   margin-left: calc(var(--nudge) * 6);
   margin-right: calc(var(--nudge) * 6);
+}
+.mx\(nudge\*12\) {
+  margin-left: calc(var(--nudge) * 12);
+  margin-right: calc(var(--nudge) * 12);
 }
 .mx\(auto\) {
   margin-left: auto;
@@ -164,33 +182,37 @@
 }
 
 /* margin-y (上下マージン) */
-.my\(x0\) {
+.my\(nudge\*0\) {
   margin-top: 0;
   margin-bottom: 0;
 }
-.my\(x0\.5\) {
+.my\(nudge\*0\.5\) {
   margin-top: calc(var(--nudge) * 0.5);
   margin-bottom: calc(var(--nudge) * 0.5);
 }
-.my\(x1\) {
+.my\(nudge\*1\) {
   margin-top: calc(var(--nudge));
   margin-bottom: calc(var(--nudge));
 }
-.my\(x1\.5\) {
+.my\(nudge\*1\.5\) {
   margin-top: calc(var(--nudge) * 1.5);
   margin-bottom: calc(var(--nudge) * 1.5);
 }
-.my\(x2\) {
+.my\(nudge\*2\) {
   margin-top: calc(var(--nudge) * 2);
   margin-bottom: calc(var(--nudge) * 2);
 }
-.my\(x3\) {
+.my\(nudge\*3\) {
   margin-top: calc(var(--nudge) * 3);
   margin-bottom: calc(var(--nudge) * 3);
 }
-.my\(x6\) {
+.my\(nudge\*6\) {
   margin-top: calc(var(--nudge) * 6);
   margin-bottom: calc(var(--nudge) * 6);
+}
+.my\(nudge\*12\) {
+  margin-top: calc(var(--nudge) * 12);
+  margin-bottom: calc(var(--nudge) * 12);
 }
 .my\(auto\) {
   margin-top: auto;
@@ -200,176 +222,199 @@
 /* パディングクラス（マージンと同様のパターンで定義） */
 
 /* 全方向一括padding */
-.p\(x0\) {
+.p\(nudge\*0\) {
   padding: 0;
 }
-.p\(x0\.5\) {
+.p\(nudge\*0\.5\) {
   padding: calc(var(--nudge) * 0.5);
 }
-.p\(x1\) {
+.p\(nudge\*1\) {
   padding: calc(var(--nudge));
 }
-.p\(x1\.5\) {
+.p\(nudge\*1\.5\) {
   padding: calc(var(--nudge) * 1.5);
 }
-.p\(x2\) {
+.p\(nudge\*2\) {
   padding: calc(var(--nudge) * 2);
 }
-.p\(x3\) {
+.p\(nudge\*3\) {
   padding: calc(var(--nudge) * 3);
 }
-.p\(x6\) {
+.p\(nudge\*6\) {
   padding: calc(var(--nudge) * 6);
+}
+.p\(nudge\*12\) {
+  padding: calc(var(--nudge) * 12);
 }
 
 /* padding-top */
-.pt\(x0\) {
+.pt\(nudge\*0\) {
   padding-top: 0;
 }
-.pt\(x0\.5\) {
+.pt\(nudge\*0\.5\) {
   padding-top: calc(var(--nudge) * 0.5);
 }
-.pt\(x1\) {
+.pt\(nudge\*1\) {
   padding-top: calc(var(--nudge));
 }
-.pt\(x1\.5\) {
+.pt\(nudge\*1\.5\) {
   padding-top: calc(var(--nudge) * 1.5);
 }
-.pt\(x2\) {
+.pt\(nudge\*2\) {
   padding-top: calc(var(--nudge) * 2);
 }
-.pt\(x3\) {
+.pt\(nudge\*3\) {
   padding-top: calc(var(--nudge) * 3);
 }
-.pt\(x6\) {
+.pt\(nudge\*6\) {
   padding-top: calc(var(--nudge) * 6);
+}
+.pt\(nudge\*12\) {
+  padding-top: calc(var(--nudge) * 12);
 }
 
 /* padding-right */
-.pr\(x0\) {
+.pr\(nudge\*0\) {
   padding-right: 0;
 }
-.pr\(x0\.5\) {
+.pr\(nudge\*0\.5\) {
   padding-right: calc(var(--nudge) * 0.5);
 }
-.pr\(x1\) {
+.pr\(nudge\*1\) {
   padding-right: calc(var(--nudge));
 }
-.pr\(x1\.5\) {
+.pr\(nudge\*1\.5\) {
   padding-right: calc(var(--nudge) * 1.5);
 }
-.pr\(x2\) {
+.pr\(nudge\*2\) {
   padding-right: calc(var(--nudge) * 2);
 }
-.pr\(x3\) {
+.pr\(nudge\*3\) {
   padding-right: calc(var(--nudge) * 3);
 }
-.pr\(x6\) {
+.pr\(nudge\*6\) {
   padding-right: calc(var(--nudge) * 6);
+}
+.pr\(nudge\*12\) {
+  padding-right: calc(var(--nudge) * 12);
 }
 
 /* padding-bottom */
-.pb\(x0\) {
+.pb\(nudge\*0\) {
   padding-bottom: 0;
 }
-.pb\(x0\.5\) {
+.pb\(nudge\*0\.5\) {
   padding-bottom: calc(var(--nudge) * 0.5);
 }
-.pb\(x1\) {
+.pb\(nudge\*1\) {
   padding-bottom: calc(var(--nudge));
 }
-.pb\(x1\.5\) {
+.pb\(nudge\*1\.5\) {
   padding-bottom: calc(var(--nudge) * 1.5);
 }
-.pb\(x2\) {
+.pb\(nudge\*2\) {
   padding-bottom: calc(var(--nudge) * 2);
 }
-.pb\(x3\) {
+.pb\(nudge\*3\) {
   padding-bottom: calc(var(--nudge) * 3);
 }
-.pb\(x6\) {
+.pb\(nudge\*6\) {
   padding-bottom: calc(var(--nudge) * 6);
+}
+.pb\(nudge\*12\) {
+  padding-bottom: calc(var(--nudge) * 12);
 }
 
 /* padding-left */
-.pl\(x0\) {
+.pl\(nudge\*0\) {
   padding-left: 0;
 }
-.pl\(x0\.5\) {
+.pl\(nudge\*0\.5\) {
   padding-left: calc(var(--nudge) * 0.5);
 }
-.pl\(x1\) {
+.pl\(nudge\*1\) {
   padding-left: calc(var(--nudge));
 }
-.pl\(x1\.5\) {
+.pl\(nudge\*1\.5\) {
   padding-left: calc(var(--nudge) * 1.5);
 }
-.pl\(x2\) {
+.pl\(nudge\*2\) {
   padding-left: calc(var(--nudge) * 2);
 }
-.pl\(x3\) {
+.pl\(nudge\*3\) {
   padding-left: calc(var(--nudge) * 3);
 }
-.pl\(x6\) {
+.pl\(nudge\*6\) {
   padding-left: calc(var(--nudge) * 6);
+}
+.pl\(nudge\*12\) {
+  padding-left: calc(var(--nudge) * 12);
 }
 
 /* padding-x (左右パディング) */
-.px\(x0\) {
+.px\(nudge\*0\) {
   padding-left: 0;
   padding-right: 0;
 }
-.px\(x0\.5\) {
+.px\(nudge\*0\.5\) {
   padding-left: calc(var(--nudge) * 0.5);
   padding-right: calc(var(--nudge) * 0.5);
 }
-.px\(x1\) {
+.px\(nudge\*1\) {
   padding-left: calc(var(--nudge));
   padding-right: calc(var(--nudge));
 }
-.px\(x1\.5\) {
+.px\(nudge\*1\.5\) {
   padding-left: calc(var(--nudge) * 1.5);
   padding-right: calc(var(--nudge) * 1.5);
 }
-.px\(x2\) {
+.px\(nudge\*2\) {
   padding-left: calc(var(--nudge) * 2);
   padding-right: calc(var(--nudge) * 2);
 }
-.px\(x3\) {
+.px\(nudge\*3\) {
   padding-left: calc(var(--nudge) * 3);
   padding-right: calc(var(--nudge) * 3);
 }
-.px\(x6\) {
+.px\(nudge\*6\) {
   padding-left: calc(var(--nudge) * 6);
   padding-right: calc(var(--nudge) * 6);
 }
+.px\(nudge\*12\) {
+  padding-left: calc(var(--nudge) * 12);
+  padding-right: calc(var(--nudge) * 12);
+}
 
 /* padding-y (上下パディング) */
-.py\(x0\) {
+.py\(nudge\*0\) {
   padding-top: 0;
   padding-bottom: 0;
 }
-.py\(x0\.5\) {
+.py\(nudge\*0\.5\) {
   padding-top: calc(var(--nudge) * 0.5);
   padding-bottom: calc(var(--nudge) * 0.5);
 }
-.py\(x1\) {
+.py\(nudge\*1\) {
   padding-top: calc(var(--nudge));
   padding-bottom: calc(var(--nudge));
 }
-.py\(x1\.5\) {
+.py\(nudge\*1\.5\) {
   padding-top: calc(var(--nudge) * 1.5);
   padding-bottom: calc(var(--nudge) * 1.5);
 }
-.py\(x2\) {
+.py\(nudge\*2\) {
   padding-top: calc(var(--nudge) * 2);
   padding-bottom: calc(var(--nudge) * 2);
 }
-.py\(x3\) {
+.py\(nudge\*3\) {
   padding-top: calc(var(--nudge) * 3);
   padding-bottom: calc(var(--nudge) * 3);
 }
-.py\(x6\) {
+.py\(nudge\*6\) {
   padding-top: calc(var(--nudge) * 6);
   padding-bottom: calc(var(--nudge) * 6);
+}
+.py\(nudge\*12\) {
+  padding-top: calc(var(--nudge) * 12);
+  padding-bottom: calc(var(--nudge) * 12);
 }
