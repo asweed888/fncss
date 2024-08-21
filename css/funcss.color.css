@@ -3,15 +3,15 @@
   background-color: var(--primary-color);
 }
 
-.bg\(primary\,dark1\) {
+.bg\(primary\,dark\:1\) {
   background-color: color-mix(in srgb, black var(--dark-ratio1), var(--primary-color));
 }
 
-.bg\(primary\,light1\) {
+.bg\(primary\,light\:1\) {
   background-color: color-mix(in srgb, white var(--light-ratio1), var(--primary-color));
 }
 
-.bg\(primary\,light2\) {
+.bg\(primary\,light\:2\) {
   background-color: color-mix(in srgb, white var(--light-ratio2), var(--primary-color));
 }
 
@@ -21,15 +21,15 @@
   color: var(--primary-color);
 }
 
-.color\(primary\,dark1\) {
+.color\(primary\,dark\:1\) {
   color: color-mix(in srgb, black var(--dark-ratio1), var(--primary-color));
 }
 
-.color\(primary\,light1\) {
+.color\(primary\,light\:1\) {
   color: color-mix(in srgb, white var(--light-ratio1), var(--primary-color));
 }
 
-.color\(primary\,light2\) {
+.color\(primary\,light\:2\) {
   color: color-mix(in srgb, white var(--light-ratio2), var(--primary-color));
 }
 
