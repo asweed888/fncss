@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/funcss.config.css">
-    <link rel="stylesheet" href="./css/funcss.color.css">
-    <link rel="stylesheet" href="./css/funcss.spacer.css">
-    <link rel="stylesheet" href="./css/funcss.grid.css">
+    <link rel="stylesheet" href="./css/fncss.config.css">
+    <link rel="stylesheet" href="./css/fncss.color.css">
+    <link rel="stylesheet" href="./css/fncss.grid.css">
+    <link rel="stylesheet" href="./css/fncss.spacer.css">
 
     <title>FNCSS Test</title>
     <style>
@@ -15,7 +15,6 @@
             background-color: #ddd;
             border: 1px solid #999;
             padding: 10px;
-            margin-bottom: 10px;
             text-align: center;
         }
     </style>
@@ -33,47 +32,8 @@
         4. レイアウトグリッドテスト
     </h2>
 
-    <!-- <div class="grid"> -->
-    <!--     <div class="sm(100) md(50) lg(25)"> -->
-    <!--         <div class="demo-box">Col 1</div> -->
-    <!--     </div> -->
-    <!--     <div class="sm(100) md(50) lg(25)"> -->
-    <!--         <div class="demo-box">Col 2</div> -->
-    <!--     </div> -->
-    <!--     <div class="sm(100) md(50) lg(25)"> -->
-    <!--         <div class="demo-box">Col 3</div> -->
-    <!--     </div> -->
-    <!--     <div class="sm(100) md(50) lg(25)"> -->
-    <!--         <div class="demo-box">Col 4</div> -->
-    <!--     </div> -->
-    <!-- </div> -->
-    <!---->
-    <!-- <div class="grid"> -->
-    <!--     <div class="sm(50) md(33) lg(25)"> -->
-    <!--         <div class="demo-box">Col 1</div> -->
-    <!--     </div> -->
-    <!--     <div class="sm(50) md(33) lg(25)"> -->
-    <!--         <div class="demo-box">Col 2</div> -->
-    <!--     </div> -->
-    <!--     <div class="sm(50) md(33) lg(25)"> -->
-    <!--         <div class="demo-box">Col 3</div> -->
-    <!--     </div> -->
-    <!--     <div class="sm(50) md(33) lg(25)"> -->
-    <!--         <div class="demo-box">Col 4</div> -->
-    <!--     </div> -->
-    <!-- </div> -->
-    <!---->
-    <!-- <div class="grid"> -->
-    <!--     <div class="sm(100) md(75) lg(75)"> -->
-    <!--         <div class="demo-box">Main Content</div> -->
-    <!--     </div> -->
-    <!--     <div class="sm(100) md(25) lg(25)"> -->
-    <!--         <div class="demo-box">Sidebar</div> -->
-    <!--     </div> -->
-    <!-- </div> -->
-
     <h1 class="font-size(4xl)">こっちは子要素個別に指定</h1>
-    <div class="grid(true) mb(nudge*12)">
+    <div class="grid(true) gap_row(x6) gap_col(x2) mb(x12)">
         <div
             data-mobile="col(12)"
             data-tablet="col(6)"
@@ -132,6 +92,7 @@
 
     <h1 class="font-size(4xl)">こっちは親要素一括</h1>
     <div
+        class="gap_row(x6) gap_col(x2)"
         data-mobile="grid(12)"
         data-tablet="grid(6)"
         data-laptop="grid(3)"

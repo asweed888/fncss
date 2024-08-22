@@ -10,6 +10,68 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
+/* 全ての子要素に対して一括 */
+[class*="grid(quarter:1)"] > * { grid-column: span 3; }
+[class*="grid(quarter:2)"] > * { grid-column: span 6; }
+[class*="grid(quarter:3)"] > * { grid-column: span 9; }
+[class*="grid(quarter:4)"] > * { grid-column: span 12; }
+
+[class*="grid(1)"] > * { grid-column: span 1; }
+[class*="grid(2)"] > * { grid-column: span 2; }
+[class*="grid(3)"] > * { grid-column: span 3; }
+[class*="grid(4)"] > * { grid-column: span 4; }
+[class*="grid(5)"] > * { grid-column: span 5; }
+[class*="grid(6)"] > * { grid-column: span 6; }
+[class*="grid(7)"] > * { grid-column: span 7; }
+[class*="grid(8)"] > * { grid-column: span 8; }
+[class*="grid(9)"] > * { grid-column: span 9; }
+[class*="grid(10)"] > * { grid-column: span 10; }
+[class*="grid(11)"] > * { grid-column: span 11; }
+[class*="grid(12)"] > * { grid-column: span 12; }
+
+/* columnごとに個別に指定 */
+[class*="grid("],
+[data-mobile*="grid("],
+[data-tablet*="grid("],
+[data-laptop*="grid("],
+[data-desktop*="grid("],
+[data-widescreen*="grid("]
+{
+  & > [class*="col(quarter:1)"] { grid-column: span 3; }
+  & > [class*="col(quarter:2)"] { grid-column: span 6; }
+  & > [class*="col(quarter:3)"] { grid-column: span 9; }
+  & > [class*="col(quarter:4)"] { grid-column: span 12; }
+
+  & > [class*="col(1)"] { grid-column: span 1; }
+  & > [class*="col(2)"] { grid-column: span 2; }
+  & > [class*="col(3)"] { grid-column: span 3; }
+  & > [class*="col(4)"] { grid-column: span 4; }
+  & > [class*="col(5)"] { grid-column: span 5; }
+  & > [class*="col(6)"] { grid-column: span 6; }
+  & > [class*="col(7)"] { grid-column: span 7; }
+  & > [class*="col(8)"] { grid-column: span 8; }
+  & > [class*="col(9)"] { grid-column: span 9; }
+  & > [class*="col(10)"] { grid-column: span 10; }
+  & > [class*="col(11)"] { grid-column: span 11; }
+  & > [class*="col(12)"] { grid-column: span 12; }
+}
+
+[class*="gap_col(x0.5)"] { column-gap: calc(var(--nudge) * 0.5) }
+[class*="gap_col(x1)"] { column-gap: calc(var(--nudge) * 1) }
+[class*="gap_col(x1.5)"] { column-gap: calc(var(--nudge) * 1.5) }
+[class*="gap_col(x2)"] { column-gap: calc(var(--nudge) * 2) }
+[class*="gap_col(x3)"] { column-gap: calc(var(--nudge) * 3) }
+[class*="gap_col(x6)"] { column-gap: calc(var(--nudge) * 6) }
+[class*="gap_col(x12)"] { column-gap: calc(var(--nudge) * 12) }
+
+[class*="gap_row(x0.5)"] { row-gap: calc(var(--nudge) * 0.5) }
+[class*="gap_row(x1)"] { row-gap: calc(var(--nudge) * 1) }
+[class*="gap_row(x1.5)"] { row-gap: calc(var(--nudge) * 1.5) }
+[class*="gap_row(x2)"] { row-gap: calc(var(--nudge) * 2) }
+[class*="gap_row(x3)"] { row-gap: calc(var(--nudge) * 3) }
+[class*="gap_row(x6)"] { row-gap: calc(var(--nudge) * 6) }
+[class*="gap_row(x12)"] { row-gap: calc(var(--nudge) * 12) }
+
 
 /* スマートフォン (SM) 用のグリッド設定 */
 @media (width < 768px) {
@@ -55,10 +117,26 @@
     & > [data-mobile*="col(12)"] { grid-column: span 12; }
   }
 
+  [data-mobile*="gap_col(x0.5)"] { column-gap: calc(var(--nudge) * 0.5) }
+  [data-mobile*="gap_col(x1)"] { column-gap: calc(var(--nudge) * 1) }
+  [data-mobile*="gap_col(x1.5)"] { column-gap: calc(var(--nudge) * 1.5) }
+  [data-mobile*="gap_col(x2)"] { column-gap: calc(var(--nudge) * 2) }
+  [data-mobile*="gap_col(x3)"] { column-gap: calc(var(--nudge) * 3) }
+  [data-mobile*="gap_col(x6)"] { column-gap: calc(var(--nudge) * 6) }
+  [data-mobile*="gap_col(x12)"] { column-gap: calc(var(--nudge) * 12) }
+
+  [data-mobile*="gap_row(x0.5)"] { row-gap: calc(var(--nudge) * 0.5) }
+  [data-mobile*="gap_row(x1)"] { row-gap: calc(var(--nudge) * 1) }
+  [data-mobile*="gap_row(x1.5)"] { row-gap: calc(var(--nudge) * 1.5) }
+  [data-mobile*="gap_row(x2)"] { row-gap: calc(var(--nudge) * 2) }
+  [data-mobile*="gap_row(x3)"] { row-gap: calc(var(--nudge) * 3) }
+  [data-mobile*="gap_row(x6)"] { row-gap: calc(var(--nudge) * 6) }
+  [data-mobile*="gap_row(x12)"] { row-gap: calc(var(--nudge) * 12) }
+
 }
 
 /* タブレット (MD) 用のグリッド設定 */
-@media (768px <= width) {
+@media (768px <= width < 1024px) {
 
   /* 全ての子要素に対して一括 */
   [data-tablet*="grid(quarter:1)"] > * { grid-column: span 3; }
@@ -102,10 +180,26 @@
     & > [data-tablet*="col(12)"] { grid-column: span 12; }
   }
 
+  [data-tablet*="gap_col(x0.5)"] { column-gap: calc(var(--nudge) * 0.5) }
+  [data-tablet*="gap_col(x1)"] { column-gap: calc(var(--nudge) * 1) }
+  [data-tablet*="gap_col(x1.5)"] { column-gap: calc(var(--nudge) * 1.5) }
+  [data-tablet*="gap_col(x2)"] { column-gap: calc(var(--nudge) * 2) }
+  [data-tablet*="gap_col(x3)"] { column-gap: calc(var(--nudge) * 3) }
+  [data-tablet*="gap_col(x6)"] { column-gap: calc(var(--nudge) * 6) }
+  [data-tablet*="gap_col(x12)"] { column-gap: calc(var(--nudge) * 12) }
+
+  [data-tablet*="gap_row(x0.5)"] { row-gap: calc(var(--nudge) * 0.5) }
+  [data-tablet*="gap_row(x1)"] { row-gap: calc(var(--nudge) * 1) }
+  [data-tablet*="gap_row(x1.5)"] { row-gap: calc(var(--nudge) * 1.5) }
+  [data-tablet*="gap_row(x2)"] { row-gap: calc(var(--nudge) * 2) }
+  [data-tablet*="gap_row(x3)"] { row-gap: calc(var(--nudge) * 3) }
+  [data-tablet*="gap_row(x6)"] { row-gap: calc(var(--nudge) * 6) }
+  [data-tablet*="gap_row(x12)"] { row-gap: calc(var(--nudge) * 12) }
+
 }
 
 /* ラップトップ (LG) 用のグリッド設定 */
-@media (1024px <= width) {
+@media (1024px <= width < 1280px) {
   /* 全ての子要素に対して一括 */
   [data-laptop*="grid(quarter:1)"] > * { grid-column: span 3; }
   [data-laptop*="grid(quarter:2)"] > * { grid-column: span 6; }
@@ -147,10 +241,26 @@
     & > [data-laptop*="col(11)"] { grid-column: span 11; }
     & > [data-laptop*="col(12)"] { grid-column: span 12; }
   }
+
+  [data-laptop*="gap_col(x0.5)"] { column-gap: calc(var(--nudge) * 0.5) }
+  [data-laptop*="gap_col(x1)"] { column-gap: calc(var(--nudge) * 1) }
+  [data-laptop*="gap_col(x1.5)"] { column-gap: calc(var(--nudge) * 1.5) }
+  [data-laptop*="gap_col(x2)"] { column-gap: calc(var(--nudge) * 2) }
+  [data-laptop*="gap_col(x3)"] { column-gap: calc(var(--nudge) * 3) }
+  [data-laptop*="gap_col(x6)"] { column-gap: calc(var(--nudge) * 6) }
+  [data-laptop*="gap_col(x12)"] { column-gap: calc(var(--nudge) * 12) }
+
+  [data-laptop*="gap_row(x0.5)"] { row-gap: calc(var(--nudge) * 0.5) }
+  [data-laptop*="gap_row(x1)"] { row-gap: calc(var(--nudge) * 1) }
+  [data-laptop*="gap_row(x1.5)"] { row-gap: calc(var(--nudge) * 1.5) }
+  [data-laptop*="gap_row(x2)"] { row-gap: calc(var(--nudge) * 2) }
+  [data-laptop*="gap_row(x3)"] { row-gap: calc(var(--nudge) * 3) }
+  [data-laptop*="gap_row(x6)"] { row-gap: calc(var(--nudge) * 6) }
+  [data-laptop*="gap_row(x12)"] { row-gap: calc(var(--nudge) * 12) }
 }
 
 /* デスクトップ (XL) 用のグリッド設定 */
-@media (1280px <= width) {
+@media (1280px <= width < 1536px) {
   /* 全ての子要素に対して一括 */
   [data-desktop*="grid(quarter:1)"] > * { grid-column: span 3; }
   [data-desktop*="grid(quarter:2)"] > * { grid-column: span 6; }
@@ -192,6 +302,22 @@
     & > [data-desktop*="col(11)"] { grid-column: span 11; }
     & > [data-desktop*="col(12)"] { grid-column: span 12; }
   }
+
+  [data-desktop*="gap_col(x0.5)"] { column-gap: calc(var(--nudge) * 0.5) }
+  [data-desktop*="gap_col(x1)"] { column-gap: calc(var(--nudge) * 1) }
+  [data-desktop*="gap_col(x1.5)"] { column-gap: calc(var(--nudge) * 1.5) }
+  [data-desktop*="gap_col(x2)"] { column-gap: calc(var(--nudge) * 2) }
+  [data-desktop*="gap_col(x3)"] { column-gap: calc(var(--nudge) * 3) }
+  [data-desktop*="gap_col(x6)"] { column-gap: calc(var(--nudge) * 6) }
+  [data-desktop*="gap_col(x12)"] { column-gap: calc(var(--nudge) * 12) }
+
+  [data-desktop*="gap_row(x0.5)"] { row-gap: calc(var(--nudge) * 0.5) }
+  [data-desktop*="gap_row(x1)"] { row-gap: calc(var(--nudge) * 1) }
+  [data-desktop*="gap_row(x1.5)"] { row-gap: calc(var(--nudge) * 1.5) }
+  [data-desktop*="gap_row(x2)"] { row-gap: calc(var(--nudge) * 2) }
+  [data-desktop*="gap_row(x3)"] { row-gap: calc(var(--nudge) * 3) }
+  [data-desktop*="gap_row(x6)"] { row-gap: calc(var(--nudge) * 6) }
+  [data-desktop*="gap_row(x12)"] { row-gap: calc(var(--nudge) * 12) }
 }
 
 /* ワイドスクリーン (XXL) 用のグリッド設定 */
@@ -237,4 +363,20 @@
     & > [data-widescreen*="col(11)"] { grid-column: span 11; }
     & > [data-widescreen*="col(12)"] { grid-column: span 12; }
   }
+
+  [data-widescreen*="gap_col(x0.5)"] { column-gap: calc(var(--nudge) * 0.5) }
+  [data-widescreen*="gap_col(x1)"] { column-gap: calc(var(--nudge) * 1) }
+  [data-widescreen*="gap_col(x1.5)"] { column-gap: calc(var(--nudge) * 1.5) }
+  [data-widescreen*="gap_col(x2)"] { column-gap: calc(var(--nudge) * 2) }
+  [data-widescreen*="gap_col(x3)"] { column-gap: calc(var(--nudge) * 3) }
+  [data-widescreen*="gap_col(x6)"] { column-gap: calc(var(--nudge) * 6) }
+  [data-widescreen*="gap_col(x12)"] { column-gap: calc(var(--nudge) * 12) }
+
+  [data-widescreen*="gap_row(x0.5)"] { row-gap: calc(var(--nudge) * 0.5) }
+  [data-widescreen*="gap_row(x1)"] { row-gap: calc(var(--nudge) * 1) }
+  [data-widescreen*="gap_row(x1.5)"] { row-gap: calc(var(--nudge) * 1.5) }
+  [data-widescreen*="gap_row(x2)"] { row-gap: calc(var(--nudge) * 2) }
+  [data-widescreen*="gap_row(x3)"] { row-gap: calc(var(--nudge) * 3) }
+  [data-widescreen*="gap_row(x6)"] { row-gap: calc(var(--nudge) * 6) }
+  [data-widescreen*="gap_row(x12)"] { row-gap: calc(var(--nudge) * 12) }
 }
