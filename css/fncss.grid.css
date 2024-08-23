@@ -1,5 +1,6 @@
 /* グリッドの基本設定 */
 [class*="grid("],
+[data-s-mobile*="grid("],
 [data-mobile*="grid("],
 [data-tablet*="grid("],
 [data-laptop*="grid("],
@@ -31,6 +32,7 @@
 
 /* columnごとに個別に指定 */
 [class*="grid("],
+[data-s-mobile*="grid("],
 [data-mobile*="grid("],
 [data-tablet*="grid("],
 [data-laptop*="grid("],
@@ -73,8 +75,70 @@
 [class*="gap_row(x12)"] { row-gap: calc(var(--nudge) * 12) }
 
 
-/* スマートフォン (SM) 用のグリッド設定 */
-@media (width < 768px) {
+/* スマートフォン (S) 用のグリッド設定 */
+@container style(--fncss-s-mobile) {
+
+  /* 全ての子要素に対して一括 */
+  [data-s-mobile*="grid(quarter:1)"] > * { grid-column: span 3; }
+  [data-s-mobile*="grid(quarter:2)"] > * { grid-column: span 6; }
+  [data-s-mobile*="grid(quarter:3)"] > * { grid-column: span 9; }
+  [data-s-mobile*="grid(quarter:4)"] > * { grid-column: span 12; }
+
+  [data-s-mobile*="grid(1)"] > * { grid-column: span 1; }
+  [data-s-mobile*="grid(2)"] > * { grid-column: span 2; }
+  [data-s-mobile*="grid(3)"] > * { grid-column: span 3; }
+  [data-s-mobile*="grid(4)"] > * { grid-column: span 4; }
+  [data-s-mobile*="grid(5)"] > * { grid-column: span 5; }
+  [data-s-mobile*="grid(6)"] > * { grid-column: span 6; }
+  [data-s-mobile*="grid(7)"] > * { grid-column: span 7; }
+  [data-s-mobile*="grid(8)"] > * { grid-column: span 8; }
+  [data-s-mobile*="grid(9)"] > * { grid-column: span 9; }
+  [data-s-mobile*="grid(10)"] > * { grid-column: span 10; }
+  [data-s-mobile*="grid(11)"] > * { grid-column: span 11; }
+  [data-s-mobile*="grid(12)"] > * { grid-column: span 12; }
+
+  /* columnごとに個別に指定 */
+  [class*="grid("],
+  [data-s-mobile*="grid("] {
+    & > [data-s-mobile*="col(quarter:1)"] { grid-column: span 3; }
+    & > [data-s-mobile*="col(quarter:2)"] { grid-column: span 6; }
+    & > [data-s-mobile*="col(quarter:3)"] { grid-column: span 9; }
+    & > [data-s-mobile*="col(quarter:4)"] { grid-column: span 12; }
+
+    & > [data-s-mobile*="col(1)"] { grid-column: span 1; }
+    & > [data-s-mobile*="col(2)"] { grid-column: span 2; }
+    & > [data-s-mobile*="col(3)"] { grid-column: span 3; }
+    & > [data-s-mobile*="col(4)"] { grid-column: span 4; }
+    & > [data-s-mobile*="col(5)"] { grid-column: span 5; }
+    & > [data-s-mobile*="col(6)"] { grid-column: span 6; }
+    & > [data-s-mobile*="col(7)"] { grid-column: span 7; }
+    & > [data-s-mobile*="col(8)"] { grid-column: span 8; }
+    & > [data-s-mobile*="col(9)"] { grid-column: span 9; }
+    & > [data-s-mobile*="col(10)"] { grid-column: span 10; }
+    & > [data-s-mobile*="col(11)"] { grid-column: span 11; }
+    & > [data-s-mobile*="col(12)"] { grid-column: span 12; }
+  }
+
+  [data-s-mobile*="gap_col(x0.5)"] { column-gap: calc(var(--nudge) * 0.5) }
+  [data-s-mobile*="gap_col(x1)"] { column-gap: calc(var(--nudge) * 1) }
+  [data-s-mobile*="gap_col(x1.5)"] { column-gap: calc(var(--nudge) * 1.5) }
+  [data-s-mobile*="gap_col(x2)"] { column-gap: calc(var(--nudge) * 2) }
+  [data-s-mobile*="gap_col(x3)"] { column-gap: calc(var(--nudge) * 3) }
+  [data-s-mobile*="gap_col(x6)"] { column-gap: calc(var(--nudge) * 6) }
+  [data-s-mobile*="gap_col(x12)"] { column-gap: calc(var(--nudge) * 12) }
+
+  [data-s-mobile*="gap_row(x0.5)"] { row-gap: calc(var(--nudge) * 0.5) }
+  [data-s-mobile*="gap_row(x1)"] { row-gap: calc(var(--nudge) * 1) }
+  [data-s-mobile*="gap_row(x1.5)"] { row-gap: calc(var(--nudge) * 1.5) }
+  [data-s-mobile*="gap_row(x2)"] { row-gap: calc(var(--nudge) * 2) }
+  [data-s-mobile*="gap_row(x3)"] { row-gap: calc(var(--nudge) * 3) }
+  [data-s-mobile*="gap_row(x6)"] { row-gap: calc(var(--nudge) * 6) }
+  [data-s-mobile*="gap_row(x12)"] { row-gap: calc(var(--nudge) * 12) }
+
+}
+
+/* スマートフォン用のグリッド設定 */
+@container style(--fncss-mobile) {
 
   /* 全ての子要素に対して一括 */
   [data-mobile*="grid(quarter:1)"] > * { grid-column: span 3; }
@@ -136,7 +200,7 @@
 }
 
 /* タブレット (MD) 用のグリッド設定 */
-@media (768px <= width < 1024px) {
+@container style(--fncss-tablet) {
 
   /* 全ての子要素に対して一括 */
   [data-tablet*="grid(quarter:1)"] > * { grid-column: span 3; }
@@ -199,7 +263,7 @@
 }
 
 /* ラップトップ (LG) 用のグリッド設定 */
-@media (1024px <= width < 1280px) {
+@container style(--fncss-laptop) {
   /* 全ての子要素に対して一括 */
   [data-laptop*="grid(quarter:1)"] > * { grid-column: span 3; }
   [data-laptop*="grid(quarter:2)"] > * { grid-column: span 6; }
@@ -260,7 +324,7 @@
 }
 
 /* デスクトップ (XL) 用のグリッド設定 */
-@media (1280px <= width < 1536px) {
+@container style(--fncss-desktop) {
   /* 全ての子要素に対して一括 */
   [data-desktop*="grid(quarter:1)"] > * { grid-column: span 3; }
   [data-desktop*="grid(quarter:2)"] > * { grid-column: span 6; }
@@ -321,7 +385,7 @@
 }
 
 /* ワイドスクリーン (XXL) 用のグリッド設定 */
-@media (1536px <= width) {
+@container style(--fncss-widescreen) {
   /* 全ての子要素に対して一括 */
   [data-widescreen*="grid(quarter:1)"] > * { grid-column: span 3; }
   [data-widescreen*="grid(quarter:2)"] > * { grid-column: span 6; }
