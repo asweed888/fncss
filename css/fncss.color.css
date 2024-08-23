@@ -1,35 +1,35 @@
 /* 背景色クラス（前回のまま） */
 .bg\(primary\) {
-  background-color: var(--primary-color);
+  background-color: var(--fncss-primary-color);
 }
 
 .bg\(primary\,dark\:1\) {
-  background-color: color-mix(in srgb, black var(--dark-ratio1), var(--primary-color));
+  background-color: color-mix(in srgb, black var(--fncss-dark-ratio1), var(--fncss-primary-color));
 }
 
 .bg\(primary\,light\:1\) {
-  background-color: color-mix(in srgb, white var(--light-ratio1), var(--primary-color));
+  background-color: color-mix(in srgb, white var(--fncss-light-ratio1), var(--fncss-primary-color));
 }
 
 .bg\(primary\,light\:2\) {
-  background-color: color-mix(in srgb, white var(--light-ratio2), var(--primary-color));
+  background-color: color-mix(in srgb, white var(--fncss-light-ratio2), var(--fncss-primary-color));
 }
 
 
 /* 文字色クラス（新規追加） */
 .color\(primary\) {
-  color: var(--primary-color);
+  color: var(--fncss-primary-color);
 }
 
 .color\(primary\,dark\:1\) {
-  color: color-mix(in srgb, black var(--dark-ratio1), var(--primary-color));
+  color: color-mix(in srgb, black var(--fncss-dark-ratio1), var(--fncss-primary-color));
 }
 
 .color\(primary\,light\:1\) {
-  color: color-mix(in srgb, white var(--light-ratio1), var(--primary-color));
+  color: color-mix(in srgb, white var(--fncss-light-ratio1), var(--fncss-primary-color));
 }
 
 .color\(primary\,light\:2\) {
-  color: color-mix(in srgb, white var(--light-ratio2), var(--primary-color));
+  color: color-mix(in srgb, white var(--fncss-light-ratio2), var(--fncss-primary-color));
 }
 
