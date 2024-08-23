@@ -2,13 +2,13 @@
   /* nudge: ベースとなる間隔の単位。
    Figmaのオートレイアウトのスペーシングに相当。
    レスポンシブデザインのために、ビューポートサイズに応じて変化する。 */
-  --nudge: 8px;
+  --fncss-nudge: 8px;
 
   /* 既存の色設定 */
-  --primary-color: hsl(151, 37%, 54%);
-  --dark-ratio1: 20%;
-  --light-ratio1: 80%;
-  --light-ratio2: 90%;
+  --fncss-primary-color: hsl(151, 37%, 54%);
+  --fncss-dark-ratio1: 20%;
+  --fncss-light-ratio1: 80%;
+  --fncss-light-ratio2: 90%;
 
 
 /* スマートフォン (S) 用のグリッド設定 */
