@@ -9,4 +9,32 @@
   --dark-ratio1: 20%;
   --light-ratio1: 80%;
   --light-ratio2: 90%;
+
+
+/* スマートフォン (S) 用のグリッド設定 */
+@media (width < 576px) {
+  --fncss-s-mobile: true;
+}
+/* スマートフォン (L) 用のグリッド設定 */
+@media (576px <= width < 768px) {
+  --fncss-mobile: true;
+}
+/* タブレット用のグリッド設定 */
+@media (768px <= width < 992px) {
+  --fncss-tablet: true;
+}
+/* ラップトップ用のグリッド設定 */
+@media (992px <= width < 1200px) {
+  --fncss-laptop: true;
+}
+/* デスクトップ用のグリッド設定 */
+@media (1200px <= width < 1400px) {
+  --fncss-desktop: true;
+}
+/* ワイドスクリーン用のグリッド設定 */
+@media (1400px <= width) {
+  --fncss-widescreen: true;
+}
+
+
 }
