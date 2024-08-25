@@ -1,0 +1,54 @@
+[class*="container("] {
+  width: 100%;
+}
+
+[class*="container(gutter:x1)"] {
+  padding-left: calc(var(--fncss-nudge) * 1);
+  padding-right: calc(var(--fncss-nudge) * 1);
+}
+
+@container style(--fncss-mobile) {
+  [class*="container(gutter:x1)"] {
+    max-width: calc(var(--fncss-nudge) * 68);
+    padding-left: initial;
+    padding-right: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@container style(--fncss-tablet) {
+  [class*="container(gutter:x1)"] {
+    max-width: calc(var(--fncss-nudge) * 90);
+    padding-left: initial;
+    padding-right: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@container style(--fncss-laptop) {
+  [class*="container(gutter:x1)"] {
+    max-width: calc(var(--fncss-nudge) * 120);
+    padding-left: initial;
+    padding-right: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@container style(--fncss-desktop) {
+  [class*="container(gutter:x1)"] {
+    max-width: calc(var(--fncss-nudge) * 143);
+    padding-left: initial;
+    padding-right: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@container style(--fncss-widescreen) {
+  [class*="container(gutter:x1)"] {
+    max-width: calc(var(--fncss-nudge) * 165);
+    padding-left: initial;
+    padding-right: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
