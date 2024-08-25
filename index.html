@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fncss.config.css">
     <link rel="stylesheet" href="./css/fncss.color.css">
+    <link rel="stylesheet" href="./css/fncss.container.css">
     <link rel="stylesheet" href="./css/fncss.grid.css">
     <link rel="stylesheet" href="./css/fncss.spacer.css">
 
@@ -32,67 +33,67 @@
         4. レイアウトグリッドテスト
     </h2>
 
-    <h1 class="font-size(4xl)">こっちは子要素個別に指定</h1>
-    <div class="grid(true) gap_row(x6) gap_col(x2) mb(x12)">
-        <div
-            data-mobile="col(12)"
-            data-tablet="col(6)"
-            data-laptop="col(3)"
-            data-desktop="col(2)"
-            data-widescreen="col(1)"
-        >
-            <div class="demo-box">Item 1</div>
-        </div>
-        <div
-            data-mobile="col(12)"
-            data-tablet="col(6)"
-            data-laptop="col(3)"
-            data-desktop="col(2)"
-            data-widescreen="col(1)"
-        >
-            <div class="demo-box">Item 2</div>
-        </div>
-        <div
-            data-mobile="col(12)"
-            data-tablet="col(6)"
-            data-laptop="col(3)"
-            data-desktop="col(2)"
-            data-widescreen="col(1)"
-        >
-            <div class="demo-box">Item 3</div>
-        </div>
-        <div
-            data-mobile="col(12)"
-            data-tablet="col(6)"
-            data-laptop="col(3)"
-            data-desktop="col(2)"
-            data-widescreen="col(1)"
-        >
-            <div class="demo-box">Item 4</div>
-        </div>
-        <div
-            data-mobile="col(12)"
-            data-tablet="col(6)"
-            data-laptop="col(3)"
-            data-desktop="col(2)"
-            data-widescreen="col(1)"
-        >
-            <div class="demo-box">Item 5</div>
-        </div>
-        <div
-            data-mobile="col(12)"
-            data-tablet="col(6)"
-            data-laptop="col(3)"
-            data-desktop="col(2)"
-            data-widescreen="col(1)"
-        >
-            <div class="demo-box">Item 6</div>
-        </div>
-    </div>
+    <!-- <h1 class="font-size(4xl)">こっちは子要素個別に指定</h1> -->
+    <!-- <div class="grid(true) gap_row(x6) gap_col(x2) mb(x12)"> -->
+    <!--     <div -->
+    <!--         data-mobile="col(12)" -->
+    <!--         data-tablet="col(6)" -->
+    <!--         data-laptop="col(3)" -->
+    <!--         data-desktop="col(2)" -->
+    <!--         data-widescreen="col(1)" -->
+    <!--     > -->
+    <!--         <div class="demo-box">Item 1</div> -->
+    <!--     </div> -->
+    <!--     <div -->
+    <!--         data-mobile="col(12)" -->
+    <!--         data-tablet="col(6)" -->
+    <!--         data-laptop="col(3)" -->
+    <!--         data-desktop="col(2)" -->
+    <!--         data-widescreen="col(1)" -->
+    <!--     > -->
+    <!--         <div class="demo-box">Item 2</div> -->
+    <!--     </div> -->
+    <!--     <div -->
+    <!--         data-mobile="col(12)" -->
+    <!--         data-tablet="col(6)" -->
+    <!--         data-laptop="col(3)" -->
+    <!--         data-desktop="col(2)" -->
+    <!--         data-widescreen="col(1)" -->
+    <!--     > -->
+    <!--         <div class="demo-box">Item 3</div> -->
+    <!--     </div> -->
+    <!--     <div -->
+    <!--         data-mobile="col(12)" -->
+    <!--         data-tablet="col(6)" -->
+    <!--         data-laptop="col(3)" -->
+    <!--         data-desktop="col(2)" -->
+    <!--         data-widescreen="col(1)" -->
+    <!--     > -->
+    <!--         <div class="demo-box">Item 4</div> -->
+    <!--     </div> -->
+    <!--     <div -->
+    <!--         data-mobile="col(12)" -->
+    <!--         data-tablet="col(6)" -->
+    <!--         data-laptop="col(3)" -->
+    <!--         data-desktop="col(2)" -->
+    <!--         data-widescreen="col(1)" -->
+    <!--     > -->
+    <!--         <div class="demo-box">Item 5</div> -->
+    <!--     </div> -->
+    <!--     <div -->
+    <!--         data-mobile="col(12)" -->
+    <!--         data-tablet="col(6)" -->
+    <!--         data-laptop="col(3)" -->
+    <!--         data-desktop="col(2)" -->
+    <!--         data-widescreen="col(1)" -->
+    <!--     > -->
+    <!--         <div class="demo-box">Item 6</div> -->
+    <!--     </div> -->
+    <!-- </div> -->
 
     <h1 class="font-size(4xl)">こっちは親要素一括</h1>
     <div
-        class="grid(12) gap_row(x6) gap_col(x2)"
+        class="grid(12) gap_row(x6) gap_col(x2) container(gutter:x1)"
         data-tablet="grid(6)"
         data-laptop="grid(3)"
         data-desktop="grid(2)"
@@ -104,6 +105,12 @@
         <div><div class="demo-box">Item 4</div></div>
         <div><div class="demo-box">Item 5</div></div>
         <div><div class="demo-box">Item 6</div></div>
+        <div><div class="demo-box">Item 7</div></div>
+        <div><div class="demo-box">Item 8</div></div>
+        <div><div class="demo-box">Item 9</div></div>
+        <div><div class="demo-box">Item 10</div></div>
+        <div><div class="demo-box">Item 11</div></div>
+        <div><div class="demo-box">Item 12</div></div>
     </div>
 </section>
 
